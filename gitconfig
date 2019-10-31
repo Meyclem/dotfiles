@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+	editor = code --wait
 
 [alias]
   co = checkout
@@ -22,9 +22,11 @@
   d = !git --no-pager diff
   dt  = difftool
   stat = !git --no-pager diff --stat
+  del = branch -D
+  gpom = git pull origin master
 
   # Clean merged branches
-  sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
+  sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -D && git remote prune origin
 
   # http://www.jukie.net/bart/blog/pimping-out-git-log
   lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'
@@ -49,3 +51,7 @@
 [user]
 	email = meyclem@gmail.com
 	name = Clement Meyer
+  signingkey = DCCAA8986AE4B0FDE6C34DBA8E371C5E22C0B378
+
+[commit]
+  gpgsign = true
