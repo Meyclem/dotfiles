@@ -1,0 +1,78 @@
+[alias]
+	br = branch
+	ci = commit -S
+	clean-branches = ! git branch -vv | grep "gone]" | awk '{ print $1 }' | xargs git branch -D
+	co = checkout
+	d = diff
+	dc = diff --cached
+	exec = ! exec
+	g = grep --break --heading --line-number
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit
+	oops = commit -S --amend --no-edit
+	p = push -u
+	pf = push --force-with-lease
+	pff = push --force-with-lease --no-verify
+	pr = !open "https://github.com/$(git remote get-url --push origin | sed -e 's/.*://' -e 's/\\.git//')/compare/$(git current)?expand=1"
+	pr-create = !gitpr
+	s = status --branch --short
+	
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+
+[color "branch"]
+  current = green
+  remote = yellow
+
+[diff]
+	renames = copies
+	tool = vimdiff3
+
+[difftool]
+	prompt = false
+
+[difftool "vimdiff3"]
+	path = nvim
+
+[color "diff"]
+	whitespace = red
+
+[core]
+	excludesfile = ~/.gitignore
+	pager = less -F -X
+  editor = 'code' -n -w
+
+[fetch]
+	prune = true
+
+[grep]
+	extendRegexp = true
+	lineNumber = true
+
+[include]
+	path = ~/.gitconfig.local
+
+[init]
+	templatedir = ~/.git_template
+	defaultBranch = main
+
+[merge]
+	tool = vimdiff3
+
+[mergetool "vimdiff3"]
+	path = nvim
+
+[pull]
+	rebase = true
+	ff = only
+
+[push]
+	default = current
+
+[user]
+	email = thomas@gautier.gg
+	name = Thomas Gautier
+	useconfigonly = true

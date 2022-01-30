@@ -1,0 +1,24 @@
+fpath=(
+  ~/.zsh/functions
+  /opt/homebrew/completions/zsh
+  /opt/homebrew/share/zsh-completions
+  /opt/homebrew/share/zsh/site-functions
+  /usr/local/share/zsh-completions
+  /usr/local/share/zsh/site-functions
+  /usr/share/zsh/site-functions
+  ~/.zsh/completion
+  $fpath
+)
+
+zstyle ':completion:*' completer _expand _complete _ignored
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':completion:*' menu select
+zstyle :compinstall filename ~/.zshrc
+
+autoload -Uz compinit
+
+for f in ~/.zsh/functions/*; do
+  autoload -Uz ${f##*/}
+done
+
+compinit
