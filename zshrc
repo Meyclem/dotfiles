@@ -18,13 +18,13 @@ bindkey '^[[Z' reverse-menu-complete # Ctrl-r
 bindkey '^[[A' up-line-or-search # Arrow up
 bindkey '^[[B' down-line-or-search # Arrow down
 
-_currentEnvironmentName() {
-  if [ -z "${CURRENT_ENVIRONMENT_NAME}" ]; then
-    echo ""
-  else
-    echo "%{\e[38;5;250m%}[${CURRENT_ENVIRONMENT_NAME}]%{\e[39m%} "
-  fi
-}
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+PATH="/usr/local/sbin:$PATH"
+PATH="${HOME}/.local/bin:${PATH}"
+PATH="${HOME}/.asdf/shims:${PATH}"
+PATH="./node_modules/.bin:${PATH}"
+PATH="${HOME}/Library/Android//sdk/platform-tools:${PATH}"
+PATH="${HOME}/.bin:${PATH}"
 
 # git branch in prompt
 autoload -Uz vcs_info
@@ -32,7 +32,7 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats ' %F{cyan}%b%f'
 
 setopt PROMPT_SUBST
-export PROMPT='%B%c%b%f$(_currentEnvironmentName)${vcs_info_msg_0_} %(?.%F{24}❯%f.%F{198}❯%f) '
+export PROMPT='%B%c%b%f${vcs_info_msg_0_} %(?.💚.💔) '
 
 source ${HOME}/.zsh/zaliases
 source ${HOME}/.zsh/zcompletion

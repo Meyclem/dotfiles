@@ -1,5 +1,0 @@
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension esbenp.prettier-vscode
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension oderwat.indent-rainbow
-code --install-extension redhat.vscode-yaml

@@ -1,13 +1,13 @@
 #! /usr/bin/env sh
 
 brew update \
-  && brew bundle install \
+  && brew bundle --file=~/.Brewfile \
   && brew upgrade \
   && brew cleanup \
-  && brew bundle cleanup --force \
+  && brew bundle cleanup --force --file=~/.Brewfile \
   && brew doctor
 
 asdf update
 asdf plugin-update --all
 
-# mas upgrade
+mas upgrade

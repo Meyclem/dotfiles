@@ -19,7 +19,6 @@ brew "hivemind"
 brew "htop"
 brew "imagemagick"
 brew "jq"
-brew "kops"
 brew "mas"
 brew "node"
 brew "openssl"
@@ -37,7 +36,6 @@ brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
 cask "alfred"
-cask "adobe-creative-cloud"
 cask "chromedriver"
 cask "discord"
 cask "fantastical"
@@ -55,20 +53,8 @@ cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
 
-# Magnet
-mas install 441258766
-# Bear
-mas install 1091189122
-# Goodnotes
-mas install 1444383602
-# Trello
-mas install 1278508951
-
-# mas "Keynote", id: 409183694
-# mas "Monosnap", id: 540348655
-# mas "NextDNS", id: 1464122853
-# mas "Numbers", id: 409203825
-# mas "Pages", id: 409201541
-# mas "Reeder 5", id: 1529448980
-# mas "Tweetbot", id: 1384080005
-# mas "Xcode", id: 497799835
+mas "Magnet", id: 441258766
+mas "Bear", id: 1091189122
+mas "Goodnotes", id: 1444383602
+mas "Trello", id: 1278508951
+mas "MonoSnap", id: 540348655

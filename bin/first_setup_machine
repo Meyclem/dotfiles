@@ -2,8 +2,9 @@
 
 # ---- ASDF ----
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf
-cd ~/.asdf
-git checkout "$(git describe --abbrev=0 --tags)"
+(cd ~/.asdf && git checkout "$(git describe --abbrev=0 --tags)")
+asdf plugin add nodejs
+asdf plugin add yarn
 
 # ---- MacOS ----
 
@@ -16,7 +17,7 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
 ## Enable Key Repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write -g KeyRepeat -int 0.02
+defaults write -g KeyRepeat -int 1
 
 ## Dock settings
 defaults write com.apple.dock "autohide" -bool "true" && killall Dock
