@@ -1,17 +1,19 @@
+alias b="open `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#http://#' -e 's@com:@com/@'`| head -n1"
+alias c='code'
+alias ga="git add"
+alias gc="git commit"
+alias gl="git log --pretty=oneline --abbrev-commit"
+alias gp="git push -u"
+alias gpom="git pull origin master"
+alias gpr="git pull --rebase origin"
+alias gst="git status"
+alias hb="hub browse"
 alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
-alias gst="git status"
-alias scr="cat package.json | jq .scripts"
-alias gl="git log --pretty=oneline --abbrev-commit"
-alias ga="git add"
-alias gp="git push -u"
-alias gpr="git pull --rebase origin"
-alias gc="git commit"
-alias gpom="git pull origin master"
-alias uuid='uuidgen | tr -d '\''\n'\'' | pbcopy'
-alias hb="hub browse"
 alias la='ls -lah'
 alias ll='ls -lh'
 alias ls='ls -G'
+alias scr="cat package.json | jq .scripts"
+alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 alias trash='sudo rm -rf ~/.Trash/*'
+alias uuid='uuidgen | tr -d '\''\n'\'' | pbcopy'

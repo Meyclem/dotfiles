@@ -49,12 +49,13 @@ cask "iterm2"
 cask "obsidian"
 cask "postman"
 cask "slack"
+cask "todoist"
 cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
 
-mas "Magnet", id: 441258766
 mas "Bear", id: 1091189122
 mas "Goodnotes", id: 1444383602
-mas "Trello", id: 1278508951
+mas "Magnet", id: 441258766
 mas "MonoSnap", id: 540348655
+mas "Trello", id: 1278508951

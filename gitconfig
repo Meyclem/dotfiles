@@ -15,7 +15,7 @@
 	pr = !open "https://github.com/$(git remote get-url --push origin | sed -e 's/.*://' -e 's/\\.git//')/compare/$(git current)?expand=1"
 	pr-create = !gitpr
 	s = status --branch --short
-	
+
 [color]
   branch = auto
   diff = auto
