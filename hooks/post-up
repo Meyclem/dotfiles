@@ -2,4 +2,4 @@
 
 [[ "${SHELL}" != "/bin/zsh" ]] && chsh -s /bin/zsh
 
-ln -s "$HOME/.dotfiles/utils/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+ln -s "$HOME/.utils/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"

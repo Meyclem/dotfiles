@@ -1,8 +1,8 @@
 {
   //Appearance
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Atom Material Theme",
   "editor.minimap.enabled": false,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
   "editor.bracketPairColorization.enabled": true,
 
   // Editor Settings

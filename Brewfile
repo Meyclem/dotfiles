@@ -34,6 +34,7 @@ brew "yarn"
 brew "youtube-dl"
 brew "yq"
 brew "zsh-completions"
+brew "zsh-syntax-highlighting"
 
 cask "alfred"
 cask "adobe-creative-cloud"
@@ -53,6 +54,15 @@ cask "slack"
 cask "visual-studio-code"
 cask "vlc"
 cask "zoom"
+
+# Magnet
+mas install 441258766
+# Bear
+mas install 1091189122
+# Goodnotes
+mas install 1444383602
+# Trello
+mas install 1278508951
 
 # mas "Keynote", id: 409183694
 # mas "Monosnap", id: 540348655
