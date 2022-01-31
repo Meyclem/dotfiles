@@ -1,7 +1,8 @@
 {
   //Appearance
   "workbench.colorTheme": "Atom Material Theme",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
+  "editor.minimap.scale": 1,
   "window.zoomLevel": 0,
   "editor.bracketPairColorization.enabled": true,
 
@@ -43,7 +44,8 @@
 
   // GitLens
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.currentLine.enabled": false,
+  "gitlens.currentLine.enabled": true,
   "gitlens.codeLens.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "atomKeymap.promptV3Features": true
 }
