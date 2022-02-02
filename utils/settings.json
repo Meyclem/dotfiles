@@ -1,6 +1,6 @@
 {
   //Appearance
-  "workbench.colorTheme": "Atom Material Theme",
+  "workbench.colorTheme": "Solarized Dark",
   "editor.minimap.enabled": true,
   "editor.minimap.scale": 1,
   "window.zoomLevel": 0,
@@ -47,5 +47,6 @@
   "gitlens.currentLine.enabled": true,
   "gitlens.codeLens.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "atomKeymap.promptV3Features": true
+  "atomKeymap.promptV3Features": true,
+  "sync.gist": "ce3741c7936e525cfaf63bba0f074cb8"
 }

@@ -41,6 +41,10 @@ source ${HOME}/.zsh/zcompletion
 [[ -r ${HOME}/.asdf/asdf.sh ]] && source ${HOME}/.asdf/asdf.sh
 [[ -r ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Google Cloud SDK cli.
+if [ -f '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/clementmeyer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/clementmeyer/google-cloud-sdk/completion.zsh.inc'; fi
+
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
