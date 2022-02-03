@@ -1,4 +1,5 @@
 alias c='code'
+alias dot='cd ~/code/dotfiles && code .'
 alias ga="git add"
 alias gc="git commit"
 alias gl="git log --pretty=oneline --abbrev-commit"

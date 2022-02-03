@@ -9,7 +9,7 @@ asdf plugin add yarn
 # ---- MacOS ----
 
 ## Customize touchbar
-defaults write ~/Library/Preferences/com.apple.controlstrip MiniCustomized '(com.apple.system.screen-lock, com.apple.system.volume, com.apple.system.media-play-pause, com.apple.system.do-not-disturb)'
+defaults write ~/Library/Preferences/com.apple.controlstrip MiniCustomized '(com.apple.system.mute, com.apple.system.volume, com.apple.system.media-play-pause, com.apple.system.brightness)'
 killall ControlStrip
 
 ## Disable auto correct
