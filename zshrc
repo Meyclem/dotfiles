@@ -39,7 +39,11 @@ source ${HOME}/.zsh/zcompletion
 
 [[ -r ${HOME}/.zshrc.local ]] && source ${HOME}/.zshrc.local
 [[ -r ${HOME}/.asdf/asdf.sh ]] && source ${HOME}/.asdf/asdf.sh
+<<<<<<< HEAD
 [[ -r ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source ${HOME}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+=======
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+>>>>>>> 4f70407 (changes)
 
 # Google Cloud SDK cli.
 if [ -f '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc'; fi
@@ -51,3 +55,12 @@ export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
 export EDITOR=code
+<<<<<<< HEAD
+=======
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/clementmeyer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/clementmeyer/google-cloud-sdk/completion.zsh.inc'; fi
+>>>>>>> 4f70407 (changes)

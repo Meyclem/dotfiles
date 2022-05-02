@@ -2,6 +2,10 @@ alias c='code'
 alias dot='code ~/code/dotfiles'
 alias ga="git add"
 alias gc="git commit"
+<<<<<<< HEAD
+=======
+alias gcv="git commit --no-verify"
+>>>>>>> 4f70407 (changes)
 alias gl="git log --pretty=oneline --abbrev-commit"
 alias gp="git push -u"
 alias gpom="git pull origin master"

@@ -9,6 +9,7 @@
 	g = grep --break --heading --line-number
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit
 	oops = commit -S --amend --no-edit
+	undo = reset HEAD~
 	p = push -u
 	pf = push --force-with-lease
 	pff = push --force-with-lease --no-verify

@@ -15,6 +15,10 @@ brew "curl"
 brew "gettext"
 brew "gh"
 brew "git"
+<<<<<<< HEAD
+=======
+brew "glow"
+>>>>>>> 4f70407 (changes)
 brew "gnupg"
 brew "heroku/brew/heroku"
 brew "hivemind"
@@ -55,7 +59,13 @@ cask "iterm2"
 cask "obsidian"
 cask "oracle-jdk"
 cask "postman"
+<<<<<<< HEAD
 cask "slack"
+=======
+cask "rcm"
+cask "slack"
+cask "spotify"
+>>>>>>> 4f70407 (changes)
 cask "todoist"
 cask "visual-studio-code"
 cask "vlc"
