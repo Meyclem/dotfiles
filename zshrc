@@ -39,7 +39,8 @@ source ${HOME}/.zsh/zcompletion
 
 [[ -r ${HOME}/.zshrc.local ]] && source ${HOME}/.zshrc.local
 [[ -r ${HOME}/.asdf/asdf.sh ]] && source ${HOME}/.asdf/asdf.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Google Cloud SDK cli.
 if [ -f '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/clementmeyer/google-cloud-sdk/path.zsh.inc'; fi

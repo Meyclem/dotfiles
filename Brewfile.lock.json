@@ -1234,11 +1234,11 @@
     "macos": {
       "monterey": {
         "HOMEBREW_VERSION": "3.4.10",
-        "HOMEBREW_PREFIX": "/usr/local",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "08e55394b8132a12b5cbf6cfb339f754aeca164b",
         "CLT": "13.0.0.0.1.1627064638",
         "Xcode": "13.2.1",
-        "macOS": "12.2"
+        "macOS": "12.2.1"
       }
     }
   }
