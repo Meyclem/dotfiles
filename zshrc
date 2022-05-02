@@ -19,6 +19,7 @@ bindkey '^[[A' up-line-or-search # Arrow up
 bindkey '^[[B' down-line-or-search # Arrow down
 
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+PATH=/opt/homebrew/bin:$PATH
 PATH="/usr/local/sbin:$PATH"
 PATH="${HOME}/.local/bin:${PATH}"
 PATH="${HOME}/.asdf/shims:${PATH}"
