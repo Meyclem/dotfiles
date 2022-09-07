@@ -13,7 +13,7 @@
 	p = push -u
 	pf = push --force-with-lease
 	pff = push --force-with-lease --no-verify
-	pr = !open "https://github.com/$(git remote get-url --push origin | sed -e 's/.*://' -e 's/\\.git//')/compare/$(git current)?expand=1"
+	pr = !open "https://github.com/$(git remote get-url origin | sed -e 's/.*://g' -e 's/\\.git$//' | head -n 1)/compare/$(git current | sed 's/#/%23/g')?expand=1"
 	pr-create = !gitpr
 	s = status --branch --short
 
