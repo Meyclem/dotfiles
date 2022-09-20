@@ -47,3 +47,9 @@ compaudit | xargs chmod go-w
 ```
 
 You are now good to go 🚀
+
+## Utilities
+
+You can run `first_setup_machine` if it's... the first setup of the computer.
+
+And you can also run `stack_update` to... update the stack.
