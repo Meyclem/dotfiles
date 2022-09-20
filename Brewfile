@@ -59,6 +59,7 @@ cask "spotify"
 cask "todoist"
 cask "visual-studio-code"
 cask "vlc"
+cask "whatsapp"
 cask "zoom"
 
 mas "Bear", id: 1091189122
