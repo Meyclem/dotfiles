@@ -20,6 +20,15 @@ brew install gh
 
 Once the Github cli is installed (`gh`), you can then login and follow the steps:
 
+Change the [GH credentials](./gitconfig) if needed.
+(You know, because hey... That's me!)
+
+```toml
+[user]
+	email = meyclem@gmail.com
+	name = Clement Meyer
+```
+
 ```sh
 gh auth login -s 'user:email' -w
 ```
