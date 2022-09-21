@@ -1,5 +1,6 @@
 alias c='code'
 alias dot='code ~/code/dotfiles'
+alias dk='docker compose'
 alias ga="git add"
 alias gc="git commit"
 alias gcv="git commit --no-verify"
