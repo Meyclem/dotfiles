@@ -3,6 +3,8 @@
 	ci = commit -S
 	clean-branches = ! git branch -vv | grep "gone]" | awk '{ print $1 }' | xargs git branch -D
 	co = checkout
+	cob = checkout -b
+	current = !git branch | awk '/^* (.*)/ { print $2 }' | sed /^$/d
 	d = diff
 	dc = diff --cached
 	exec = ! exec
