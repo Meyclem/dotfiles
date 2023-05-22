@@ -1,4 +1,2 @@
 scripts-prepend-node-path=true
-//npm.pkg.github.com/:_authToken=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
 @fewlinesco:registry=https://npm.pkg.github.com
-//registry.npmjs.org/:_authToken=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
