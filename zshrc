@@ -40,6 +40,7 @@ source ${HOME}/.zsh/zcompletion
 
 [[ -r ${HOME}/.zshrc.local ]] && source ${HOME}/.zshrc.local
 [[ -r ${HOME}/.asdf/asdf.sh ]] && source ${HOME}/.asdf/asdf.sh
+. ~/.asdf/plugins/java/set-java-home.zsh
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

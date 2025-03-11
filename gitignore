@@ -1,7 +1,8 @@
-*.DS_Store
+\*.DS_Store
 .q.test.js
 .env_vars
 **.secret.**
 /.env
 npmrc
 .npmrc
+TODO.md
