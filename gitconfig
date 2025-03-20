@@ -47,7 +47,7 @@
 	excludesfile = ~/.gitignore
 	pager = less -F -X
 	# editor = code --wait
-  editor = 'code' -n -w
+  editor = 'cursor' -n -w
 
 [fetch]
 	prune = true

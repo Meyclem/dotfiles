@@ -1,5 +1,5 @@
-alias c='code'
-alias dot='code ~/code/dotfiles'
+alias c='cursor'
+alias dot='cursor ~/code/dotfiles'
 alias dk='docker compose'
 alias dkc='docker compose up -d && ctop'
 alias ga="git add"
